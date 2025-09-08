@@ -26,7 +26,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar bg-[#15803d] bg-base-100 shadow-sm px-20">
+    <div
+      class="navbar bg-[#15803d] bg-base-100 shadow-sm px-4 md:px-6 lg:px-20"
+    >
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -67,6 +69,31 @@
         <a class="btn rounded-xl bg-[#facc15] text-green-600">Plant a Tree</a>
       </div>
     </div>
+
+    <!-- Banner -->
+
+    <section class="bg-[#cff0dc]">
+      <div
+        class="banner flex flex-col-reverse lg:flex-row gap-6 lg:gap-10 justify-center items-center"
+      >
+        <div class="left-image">
+          <img src="./assets/hero-leaf1.png" alt="" />
+        </div>
+        <div class="text-center mt-5">
+          <h2 class="text-4xl font-bold">Plant a Tree, Grow a Future</h2>
+          <p class="text-gray-500 mt-2">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <a class="btn mt-2 rounded-xl bg-[#facc15] text-green-600"
+            >Get Involved</a
+          >
+        </div>
+        <div class="right-image">
+          <img src="./assets/hero-leaf2.png" alt="" />
+        </div>
+      </div>
+    </section>
 
     <script src="./scripts/index.js"></script>
   </body>
