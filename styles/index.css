@@ -1,0 +1,9 @@
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*{
+   font-family: "Inter", sans-serif;
+}
