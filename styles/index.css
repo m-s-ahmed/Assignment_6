@@ -4,6 +4,20 @@
   font-style: normal;
 }
 
-*{
-   font-family: "Inter", sans-serif;
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.btn-active {
+  background: #166534 !important;
+  color: #fff !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b7e4c7;
+  border-radius: 9999px;
 }

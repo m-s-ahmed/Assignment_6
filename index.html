@@ -94,6 +94,83 @@
       </div>
     </section>
 
+    <!-- category -->
+    <section>
+      <div class="main-div max-w-7xl mx-auto px-4 py-6 grid grid-cols-12 gap-6">
+        <!-- left-category -->
+        <aside
+          class="col-span-12 md:col-span-3 lg:col-span-2 md:sticky md:top-20 self-start"
+        >
+          <div
+            class="card bg-base-100 shadow max-h-[calc(100vh-6rem)] overflow-auto"
+          >
+            <div class="card-body p-4">
+              <h2 class="card-title text-lg">Categories</h2>
+              <ul id="categoryList" class="menu gap-1"></ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- middle card -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-7">
+          <div
+            id="spinner"
+            class="flex items-center justify-center py-16 hidden"
+          >
+            <span class="loading loading-ring loading-lg"></span>
+          </div>
+          <div
+            id="grid"
+            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5"
+          ></div>
+        </div>
+        <!-- right-cart -->
+        <aside
+          id="cart"
+          class="col-span-12 md:col-span-3 lg:col-span-3 md:sticky md:top-20 self-start"
+        >
+          <div
+            class="card bg-base-100 shadow max-h-[calc(100vh-6rem)] overflow-auto"
+          >
+            <div class="card-body p-4">
+              <h2 class="card-title">Your Cart</h2>
+              <ul
+                id="cartList"
+                class="space-y-2 max-h-72 overflow-auto pr-2"
+              ></ul>
+              <div class="divider my-2"></div>
+              <div
+                class="flex items-center justify-between text-lg font-semibold"
+              >
+                <span>Total</span>
+                <span>৳<span id="cartTotal">0</span></span>
+              </div>
+              <button id="clearCart" class="btn btn-sm btn-outline mt-2">
+                Clear Cart
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <dialog id="detailModal" class="modal">
+      <div class="modal-box max-w-2xl">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            Exit
+          </button>
+        </form>
+        <div id="modalContent"></div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
     <!-- About Campaign -->
     <section class="max-w-3/4 mx-auto mt-10">
       <h2 class="text-center text-3xl font-bold mb-20">About the Campaign</h2>
@@ -149,7 +226,7 @@
     <section class="bg-[#166534] p-10">
       <div class="text-center">
         <h2 class="text-white font-semibold text-2xl">Plant a Tree Today</h2>
-        <div class=" flex justify-center items-center mt-5">
+        <div class="flex justify-center items-center mt-5">
           <fieldset
             class="fieldset bg-[#15803d] border-none rounded-box w-xs border p-4"
           >
@@ -176,9 +253,9 @@
     </section>
 
     <!-- Footer -->
-     <footer class="bg-[#14532d] text-center p-4">
+    <footer class="bg-[#14532d] text-center p-4">
       <p class="text-white">© 2025 Green Earth. All Rights Reserved.</p>
-     </footer>
+    </footer>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
